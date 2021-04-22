@@ -1,11 +1,13 @@
 <h1 align="center" style="background-color: #FFF">
-  <img alt="PlantManager" src="https://raw.githubusercontent.com/GustavCunha/Proffy/1d0e94188d32cff010a7a52b0a9c19d4c9683029/web/src/assets/images/logo.svg?token=ANH4GVSO6XNCA6QL5E4M4PK7GPQ4U" />
+  <img alt="PlantManager" src="logotype.png" />
 </h1>
 
 <p align="center">
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como_usar ">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;
+  
 </p>
 
 <br>
@@ -22,6 +24,21 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Expo](https://expo.io/)
 - [Axios](https://github.com/axios/axios)
 - [TypeScript](https://www.typescriptlang.org/)
+
+## :information_source: Como usar
+
+Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Expo](https://expo.io/) instalado no seu computador. Da sua linha de comando:
+
+```bash
+# Clone o repositório
+$ git clone https://github.com/GustavCunha/PlantManager-1.0.git
+
+# Instale as dependências
+$ npm install ou yarn install
+
+# Execute o aplicativo
+$ expo start
+```
 
 ## 💻 Projeto
 
