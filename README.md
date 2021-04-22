@@ -11,7 +11,7 @@
 <br>
 
 <p align="center">
-  <img alt="PlantManager 1.0" src="https://www.figma.com/file/gfIkbrp1KcYkdwnA1tmsuJ/PlantManager-Copy?node-id=117%3A981" width="100%">
+  <img alt="PlantManager 1.0" src="Capa.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
