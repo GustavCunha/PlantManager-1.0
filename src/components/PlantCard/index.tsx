@@ -1,3 +1,4 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
 import { View, Text } from 'react-native';
 import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
@@ -13,20 +14,25 @@ interface PlantProps extends RectButtonProps{
 
 export default function PlantCard({data, ...rest}: PlantProps) {
     return (
-        <RectButton 
+        <LinearGradient
+            colors={['#F0f0f0','#F5FAF7']}
+            start={[0.25, 1.3]}
             style={style.container}
-            {...rest}
         >
+            <RectButton 
+                style={style.button}
+                {...rest}
+            >
+                    <SvgFromUri 
+                        uri={data.photo} 
+                        width={80} 
+                        height={80}
+                    />
 
-            <SvgFromUri 
-                uri={data.photo} 
-                width={70} 
-                height={70}
-            />
-
-            <Text style={style.text}>
-                {data.name}
-            </Text>
-        </RectButton>
+                    <Text style={style.text}>
+                        {data.name}
+                    </Text>
+            </RectButton>
+        </LinearGradient>
     )
 }

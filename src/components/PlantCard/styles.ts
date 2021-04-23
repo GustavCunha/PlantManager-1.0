@@ -8,9 +8,13 @@ const style = StyleSheet.create({
         maxWidth: '45%',
         backgroundColor: colors.shape,
         borderRadius: 20,
-        paddingVertical: 10,
         alignItems: 'center',
         margin: 10
+    },
+    button:{
+        alignItems: 'center',
+        paddingVertical: 10,
+        width: '99%'
     },
     text:{
         color: colors.green_dark,

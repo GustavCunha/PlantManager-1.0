@@ -5,6 +5,7 @@ import fonts from '../../styles/fonts';
 const style = StyleSheet.create({
     container: {
         width: '100%',
+        height: 85,
         paddingHorizontal: 10,
         paddingVertical: 25,
         borderRadius: 20,
@@ -35,6 +36,19 @@ const style = StyleSheet.create({
         lineHeight: 20,
         fontFamily: fonts.complement,
         color: colors.body_dark
+    },
+
+    buttonRemove:{
+        width:100,
+        height: 85,
+        backgroundColor: colors.red,
+        borderRadius: 20,
+        marginVertical: 5,
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+        right: 20,
+        paddingLeft: 15
     }
 })
 

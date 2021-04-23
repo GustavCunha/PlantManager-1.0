@@ -3,15 +3,30 @@ import colors from '../../styles/colors';
 import fonts from '../../styles/fonts';
 
 const style = StyleSheet.create({
+    scrollListContainer: {
+        flexGrow: 1,
+        justifyContent: 'space-between',
+        backgroundColor: colors.shape
+    },
     container:{
         flex: 1,
         justifyContent: 'space-between',
-        backgroundColor: colors.shape
+        backgroundColor: colors.red
+    },
+    buttonReturn:{
+        width: 40,
+        height: 40,
+        backgroundColor: 'transparent',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 12,
+        position: 'absolute',
+        top: '10%',
+        left: '5%'
     },
     plantInfo:{
         flex: 1,
         paddingHorizontal: 30,
-        paddingVertical: 50,
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: colors.shape
@@ -21,7 +36,7 @@ const style = StyleSheet.create({
         fontSize: 24,
         lineHeight: 32,
         color: colors.heading,
-        marginTop: 15
+        marginTop: 32
     },
     plantAbout:{
         textAlign: 'center',
@@ -33,7 +48,7 @@ const style = StyleSheet.create({
     },
     controllers:{
         backgroundColor: colors.white,
-        paddingHorizontal: 20,
+        paddingHorizontal: 30,
         paddingVertical: 20
     },
     tipContainer:{
@@ -41,10 +56,10 @@ const style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         backgroundColor: colors.blue_light,
-        padding: 20,
+        padding: 16,
         borderRadius: 20,
         position: 'relative',
-        bottom: 60
+        bottom: '20%'
     },
     tipImage:{
         width: 56,
@@ -55,14 +70,15 @@ const style = StyleSheet.create({
         marginLeft: 20,
         fontFamily: fonts.text,
         color: colors.blue,
-        fontSize: 17,
-        lineHeight: 25,
-        textAlign: 'justify'
+        fontSize: 15,
+        lineHeight: 23,
+        textAlign: 'left'
     },
     alertLabel:{
         textAlign: 'center',
         fontFamily: fonts.complement,
         fontSize: 13,
+        lineHeight: 23,
         color: colors.heading,
         marginBottom: 5
     },

@@ -8,17 +8,18 @@ const style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         paddingHorizontal: 30,
-        paddingTop: 50,
+        paddingTop: '5%',
         backgroundColor: colors.background
     },
     spotlight:{
         backgroundColor: colors.blue_light,
         paddingHorizontal: 20,
         borderRadius: 20,
-        height: 110,
+        height: 88,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginVertical: 20
     },
     spotlightImage:{
         width: 56,
@@ -26,10 +27,12 @@ const style = StyleSheet.create({
     },
     spotlightText: {
         fontFamily: fonts.text,
+        fontSize: 15,
+        lineHeight: 23,
         color: colors.blue,
         flex: 1,
         paddingHorizontal: 20,
-        textAlign: 'justify'
+        textAlign: 'left'
     },
     plants:{
         flex: 1,
