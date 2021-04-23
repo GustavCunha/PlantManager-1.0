@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como_usar ">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;
@@ -25,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Axios](https://github.com/axios/axios)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## :information_source: Como usar
+## ℹ Como usar
 
 Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Expo](https://expo.io/) instalado no seu computador. Da sua linha de comando:
 
