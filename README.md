@@ -27,10 +27,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [TypeScript](https://www.typescriptlang.org/)
 - [AsyncStorage](https://react-native-async-storage.github.io/async-storage/)
 - [Notifications](https://docs.expo.io/versions/latest/sdk/notifications/)
+- [Json-Server](https://github.com/typicode/json-server)
 
 ## ℹ Como usar
 
-Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Expo](https://expo.io/) instalado no seu computador. Da sua linha de comando:
+Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Expo](https://expo.io/), [Json-Server](https://github.com/typicode/json-server) instalado no seu computador. Da sua linha de comando:
 
 ```bash
 # Clone o repositório
