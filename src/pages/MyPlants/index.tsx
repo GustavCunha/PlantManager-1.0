@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Image, FlatList, Alert } from 'react-native';
+import { View, Text, Image, FlatList, Alert, Modal } from 'react-native';
 import { formatDistance } from 'date-fns';
 import { pt } from 'date-fns/locale';
 
@@ -12,12 +12,15 @@ import { loadPlant, PlantProps, removePlant } from '../../libs/storage';
 import waterdrop from '../../images/waterdrop.png';
 
 import style from './styles';
+import { OptionButton } from '../../components/OptionButton';
+import colors from '../../styles/colors';
 
 export function MyPlants() {
 
     const [myPlants, setMyPlants] = useState<PlantProps[]>([]);
     const [loading, setLoading] = useState(true);
     const [nextWaterd, setNextWaterd] = useState<string>();
+    const [isVisible, setIsVisible] = useState(true);
 
     function handleRemove(plant: PlantProps) {
         Alert.alert('Remover', `Deseja remover a ${plant.name}?`, [
@@ -54,7 +57,7 @@ export function MyPlants() {
             );
 
             setNextWaterd(
-                `Não esqueça de regar a ${plantsStoraged[0].name} às ${nextTime} horas. `
+                `Não esqueça de regar a ${plantsStoraged[0].name} daqui à ${nextTime}`
             );
 
             setMyPlants(plantsStoraged);
@@ -101,6 +104,35 @@ export function MyPlants() {
                     contentContainerStyle={{flex: 1}}
                 />
             </View>
+
+            <Modal
+                animationType='slide'
+                visible={isVisible}
+            >
+                <View style={style.box}>
+                    
+                    {/* <View style={style.boxImage}>
+                        <Image source={}/>
+                    </View> */}
+
+                    <Text style={style.ask}>
+                        Deseja mesmo deletar sua {'\n'}
+                        <Text style={style.namePlant}>?</Text>
+                    </Text>
+                    
+                    <View style={style.buttonContainer}>
+                        <OptionButton 
+                            title="Cancelar" 
+                            color={colors.heading} 
+                        />
+
+                        <OptionButton 
+                            title="Deletar" 
+                            color={colors.red} 
+                        />
+                    </View>
+                </View>
+            </Modal>
         </View>
     )
 }

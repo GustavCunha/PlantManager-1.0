@@ -44,6 +44,38 @@ const style = StyleSheet.create({
         fontFamily: fonts.heading,
         color: colors.heading,
         marginVertical: 20
+    },
+    box:{
+        flex: 1,
+        backgroundColor: colors.white,
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 32,
+        borderRadius: 20
+    },
+    boxImage:{
+        borderRadius: 20,
+        backgroundColor: colors.shape,
+        height: 120,
+        width: 120
+    },
+    ask:{
+        fontFamily: fonts.text,
+        fontSize: 17,
+        lineHeight: 25,
+        textAlign: 'center',
+        color: colors.heading
+    },
+    namePlant:{
+        fontFamily: fonts.heading,
+        fontSize: 17,
+        lineHeight: 25,
+        textAlign: 'center',
+        color: colors.heading
+    },
+    buttonContainer:{
+        flexDirection: 'row',
+        marginTop: 24
     }
 });
 

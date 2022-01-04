@@ -142,7 +142,7 @@ export function PlantSave() {
                             style={style.dateTimePickerButton}
                         >
                             <Text style={style.dateTimePickerText}>
-                                {`Mudar ${format(selectedDateTime, 'HH:mm')}`}
+                                {`Mudar alarme ${format(selectedDateTime, 'HH:mm')}`}
                             </Text>
                         </TouchableOpacity>
                     )}
